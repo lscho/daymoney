@@ -1,0 +1,23 @@
+.am-daymoney{
+    width: 100%;
+    display: block;    
+}
+.am-daymoney table{
+    font-size: 12px;
+    _display: inline;
+    border-spacing: 0 7px;
+    border-collapse: collapse;
+    width: 100%;    
+}
+.am-daymoney td{
+    cursor:pointer
+}
+.am-daymoney tr{
+    height: 55px;  
+}
+.am-daymoney-prev{
+    cursor:pointer
+}
+.am-daymoney-next{
+    cursor:pointer
+}
