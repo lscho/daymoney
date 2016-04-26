@@ -140,6 +140,11 @@
             var this_m = (m_list[i] > 9) ? m_list[i] : '0' + m_list[i];
             var this_d = (d_list[i] > 9) ? d_list[i] : '0' + d_list[i];
             aTd[i].setAttribute('data-date', this_y + '-' + this_m + '-' + this_d);
+            if(new Date(this_y + '-' + this_m + '-' + this_d)>new Date()){
+                aTd[i].className=this.style.active;
+            }else if(new Date(this_y + '-' + this_m + '-' + this_d)<new Date()){
+                aTd[i].className=this.style.disabled;
+            }
             aTd[i].innerHTML = data[i];
             aTd[i].index = i;
             if (daydatas) {
