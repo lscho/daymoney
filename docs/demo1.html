@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../dlist/amazeui.min.css">
+    <link rel="stylesheet" type="text/css" href="../dlist/daymoney.css" />
+</head>
+<body>
+    <style type="text/css">
+        .am-daymoney tbody tr{
+            height: 12px;  
+        }
+    </style>
+    <input type="text" id="input" style="width: 200px;">
+    <div class="am-daymoney" id="calendar" style=" width: 200px; height: auto;">
+    </div>
+    <script src="../dlist/jquery.min.js"></script>
+    <script src="../dlist/amazeui.min.js"></script>
+    <script src="../dlist/daymoney.js"></script>
+    <script>
+        $(function(){
+            $('input').click(function(){
+                $("#calendar").daymoney({
+                    'click':function(obj){
+                        $("#input").val(obj.data('date'));
+                        $("#calendar").hide();
+                    }
+                }).init();
+            });
+        });
+    </script>
+</body>
+
+</html>

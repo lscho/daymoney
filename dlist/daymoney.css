@@ -9,10 +9,22 @@
     border-collapse: collapse;
     width: 100%;    
 }
-.am-daymoney td{
+.am-daymoney caption{
+    font-size: 1.9rem;
+    color: #fff;
+    background: #3bb4f2;     
+}
+.am-daymoney tbody td{
     cursor:pointer
 }
-.am-daymoney tr{
+.am-daymoney tbody td:hover{
+    background: #eee !important;
+}
+.am-daymoney thead tr{   
+    height: 25px;  
+    color: #0c80ba;
+}
+.am-daymoney tbody tr{
     height: 55px;  
 }
 .am-daymoney-prev{
@@ -20,4 +32,13 @@
 }
 .am-daymoney-next{
     cursor:pointer
+}
+.am-daymoney-month-head{
+    color: #000;
+}
+.daymoney-month-body{
+    color: #F60;
+}
+.am-primary .am-daymoney-month-head{
+    color:#0c80ba; 
 }
