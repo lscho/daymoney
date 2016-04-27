@@ -40,7 +40,7 @@
 
 ```html
  <table class="am-table am-table-bordered">
-    <caption><i class="am-daymoney-prev">&lt;&lt;</i><span id="yearNum">2016</span>年<span id="monthNum">4</span>月<i class="am-daymoney-next">&gt;&gt;</i></caption>
+    <caption><i class="am-daymoney-prev">&lt;&lt;</i><span class="am-daymoney-year">2016</span>年<span class="am-daymoney-month">4</span>月<i class="am-daymoney-next">&gt;&gt;</i></caption>
     <thead>
         <tr>
             <th>一</th>
@@ -54,79 +54,79 @@
     </thead>
     <tbody>
         <tr>
-            <td data-date="2016-03-28" class=""><span>28</span></td>
-            <td data-date="2016-03-29" class=""><span>29</span></td>
-            <td data-date="2016-03-30" class=""><span>30</span></td>
-            <td data-date="2016-03-31" class=""><span>31</span></td>
-            <td data-date="2016-04-01" class="">1</td>
-            <td data-date="2016-04-02" class="">2</td>
-            <td data-date="2016-04-03" class="">3</td>
+            <td data-date="2016-03-28" class="am-disabled"><span>28</span></td>
+            <td data-date="2016-03-29" class="am-disabled"><span>29</span></td>
+            <td data-date="2016-03-30" class="am-disabled"><span>30</span></td>
+            <td data-date="2016-03-31" class="am-disabled"><span>31</span></td>
+            <td data-date="2016-04-01" class="am-disabled">1</td>
+            <td data-date="2016-04-02" class="am-disabled">2</td>
+            <td data-date="2016-04-03" class="am-disabled">3</td>
         </tr>
         <tr>
-            <td data-date="2016-04-04" class="">4</td>
-            <td data-date="2016-04-05" class="">5</td>
-            <td data-date="2016-04-06" class="">6</td>
-            <td data-date="2016-04-07" class="">7</td>
-            <td data-date="2016-04-08" class="">8</td>
-            <td data-date="2016-04-09" class="">9</td>
-            <td data-money="228" data-date="2016-04-10" class=""><span id="dhx_month_head">10</span>
-                <br><span id="dhx_month_body">￥228</span></td>
+            <td data-date="2016-04-04" class="am-disabled">4</td>
+            <td data-date="2016-04-05" class="am-disabled">5</td>
+            <td data-date="2016-04-06" class="am-disabled">6</td>
+            <td data-date="2016-04-07" class="am-disabled">7</td>
+            <td data-date="2016-04-08" class="am-disabled">8</td>
+            <td data-date="2016-04-09" class="am-disabled">9</td>
+            <td data-money="228" data-date="2016-04-10" class="am-disabled"><span class="am-daymoney-month-head">10</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
         </tr>
         <tr>
-            <td data-money="228" data-date="2016-04-11" class=""><span id="dhx_month_head">11</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-money="228" data-date="2016-04-12" class=""><span id="dhx_month_head">12</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-money="228" data-date="2016-04-13" class=""><span id="dhx_month_head">13</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-money="258" data-date="2016-04-14" class=""><span id="dhx_month_head">14</span>
-                <br><span id="dhx_month_body">￥258</span></td>
-            <td data-money="228" data-date="2016-04-15" class=""><span id="dhx_month_head">15</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-money="228" data-date="2016-04-16" class=""><span id="dhx_month_head">16</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-money="308" data-date="2016-04-17" class=""><span id="dhx_month_head">17</span>
-                <br><span id="dhx_month_body">￥308</span></td>
+            <td data-money="228" data-date="2016-04-11" class="am-disabled"><span class="am-daymoney-month-head">11</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-money="228" data-date="2016-04-12" class="am-disabled"><span class="am-daymoney-month-head">12</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-money="228" data-date="2016-04-13" class="am-disabled"><span class="am-daymoney-month-head">13</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-money="258" data-date="2016-04-14" class="am-disabled"><span class="am-daymoney-month-head">14</span>
+                <br><span class="daymoney-month-body">￥258</span></td>
+            <td data-money="228" data-date="2016-04-15" class="am-disabled"><span class="am-daymoney-month-head">15</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-money="228" data-date="2016-04-16" class="am-disabled"><span class="am-daymoney-month-head">16</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-money="308" data-date="2016-04-17" class="am-disabled"><span class="am-daymoney-month-head">17</span>
+                <br><span class="daymoney-month-body">￥308</span></td>
         </tr>
         <tr>
-            <td data-date="2016-04-18" class="">18</td>
-            <td data-money="228" data-date="2016-04-19" class=""><span id="dhx_month_head">19</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-money="228" data-date="2016-04-20" class=""><span id="dhx_month_head">20</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-date="2016-04-21" class="">21</td>
-            <td data-money="228" data-date="2016-04-22" class=""><span id="dhx_month_head">22</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-money="228" data-date="2016-04-23" class=""><span id="dhx_month_head">23</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-money="228" data-date="2016-04-24" class=""><span id="dhx_month_head">24</span>
-                <br><span id="dhx_month_body">￥228</span></td>
+            <td data-date="2016-04-18" class="am-disabled">18</td>
+            <td data-money="228" data-date="2016-04-19" class="am-disabled"><span class="am-daymoney-month-head">19</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-money="228" data-date="2016-04-20" class="am-disabled"><span class="am-daymoney-month-head">20</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-date="2016-04-21" class="am-disabled">21</td>
+            <td data-money="228" data-date="2016-04-22" class="am-disabled"><span class="am-daymoney-month-head">22</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-money="228" data-date="2016-04-23" class="am-disabled"><span class="am-daymoney-month-head">23</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-money="228" data-date="2016-04-24" class="am-disabled"><span class="am-daymoney-month-head">24</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
         </tr>
         <tr>
-            <td data-money="228" data-date="2016-04-25" class=""><span id="dhx_month_head">25</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-money="228" data-date="2016-04-26" class=""><span id="dhx_month_head">26</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-money="228" data-date="2016-04-27" class=""><span id="dhx_month_head">27</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-money="558" data-date="2016-04-28" class=""><span id="dhx_month_head">28</span>
-                <br><span id="dhx_month_body">￥558</span></td>
-            <td data-money="228" data-date="2016-04-29" class=""><span id="dhx_month_head">29</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-money="228" data-date="2016-04-30" class=""><span id="dhx_month_head">30</span>
-                <br><span id="dhx_month_body">￥228</span></td>
-            <td data-date="2016-05-01" class=""><span>1</span></td>
+            <td data-money="228" data-date="2016-04-25" class="am-disabled"><span class="am-daymoney-month-head">25</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-money="228" data-date="2016-04-26" class="am-disabled"><span class="am-daymoney-month-head">26</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-money="228" data-date="2016-04-27" class="am-primary"><span class="am-daymoney-month-head">27</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-money="558" data-date="2016-04-28" class="am-active"><span class="am-daymoney-month-head">28</span>
+                <br><span class="daymoney-month-body">￥558</span></td>
+            <td data-money="228" data-date="2016-04-29" class="am-active"><span class="am-daymoney-month-head">29</span>
+                <br><span class="daymoney-month-body">￥228</span></td>
+            <td data-date="2016-04-30" class="am-active">30</td>
+            <td data-date="2016-05-01" class="am-active"><span>1</span></td>
         </tr>
         <tr>
-            <td data-date="2016-05-02" class=""><span>2</span></td>
-            <td data-date="2016-05-03" class=""><span>3</span></td>
-            <td data-date="2016-05-04" class=""><span>4</span></td>
-            <td data-date="2016-05-05" class=""><span>5</span></td>
-            <td data-date="2016-05-06" class=""><span>6</span></td>
-            <td data-date="2016-05-07" class=""><span>7</span></td>
-            <td data-date="2016-05-08" class=""><span>8</span></td>
+            <td data-date="2016-05-02" class="am-active"><span>2</span></td>
+            <td data-date="2016-05-03" class="am-active"><span>3</span></td>
+            <td data-date="2016-05-04" class="am-active"><span>4</span></td>
+            <td data-date="2016-05-05" class="am-active"><span>5</span></td>
+            <td data-date="2016-05-06" class="am-active"><span>6</span></td>
+            <td data-date="2016-05-07" class="am-active"><span>7</span></td>
+            <td data-date="2016-05-08" class="am-active"><span>8</span></td>
         </tr>
     </tbody>
 </table>
+
 
 ```
