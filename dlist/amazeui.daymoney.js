@@ -154,13 +154,15 @@
             m_list.push((m == 12) ? 1 : m + 1);
             d_list.push(i);
             data.push(i);
-            //data.push('<span>' + i + '</span>');
         }
         for (var i = 0; i < data.length; i++) {
             var this_y = y_list[i];
             var this_m = (m_list[i] > 9) ? m_list[i] : '0' + m_list[i];
             var this_d = (d_list[i] > 9) ? d_list[i] : '0' + d_list[i];
             aTd[i].setAttribute('data-date', this_y + '-' + this_m + '-' + this_d);
+            if(aTd[i].hasAttribute('data-money')){
+            	aTd[i].removeAttribute('data-money');			//移除全部已有价格信息
+            }
             if (new Date(this_y + '-' + this_m + '-' + this_d) > new Date()) {
                 aTd[i].className = this.style.active;
             } else if (new Date(this_y + '-' + this_m + '-' + this_d) < new Date()) {
@@ -176,14 +178,13 @@
                     ye = oneday.split("-")[0];
                     mo = oneday.split("-")[1];
                     da = oneday.split("-")[2];
-
+                    
                     if (mo.split('')[0] == 0) {
                         mo = mo.split('')[1];
                     }
                     if (da.split('')[0] == 0) {
                         var da = da.split('')[1];
                     }
-                    console.log(m);
                     if (y == ye && m == mo && data[i] == da) {
                         if (mo.length < 2) {
                             mo = 0 + mo;
@@ -200,6 +201,7 @@
         }
     }
     $.fn.daymoney = function(data) {
+    	//构造静态结构
         var html = '<table class="am-table am-table-bordered"><caption><i class="am-daymoney-prev"><<</i><span class="am-daymoney-year"></span>年<span class="am-daymoney-month"></span>月<i class="am-daymoney-next">>></i></caption><thead><tr><th>一</th><th>二</th><th>三</th><th>四</th><th>五</th><th class="red">六</th><th class="red">日</th></tr></thead><tbody>';
         for (var i = 0; i < 6; i++) {
             html += '<tr>';
