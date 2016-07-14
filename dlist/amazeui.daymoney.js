@@ -171,14 +171,12 @@
             aTd[i].innerHTML = data[i];
             aTd[i].index = i;
             if (daydatas) {
-                var mjj=false;
                 for (var j = 0; j < daydatas.length; j++) {
                     oneday = daydatas[j].day.split("|")[0];
                     money = daydatas[j].day.split("|")[1];
                     ye = oneday.split("-")[0];
                     mo = oneday.split("-")[1];
                     da = oneday.split("-")[2];
-                    
                     if (mo.split('')[0] == 0) {
                         mo = mo.split('')[1];
                     }
@@ -186,15 +184,8 @@
                         var da = da.split('')[1];
                     }
                     if (y == ye && m == mo && data[i] == da) {
-                        if (mo.length < 2) {
-                            mo = 0 + mo;
-                        }
                         aTd[i].setAttribute('data-money', money);
                         aTd[i].innerHTML = '<span class="am-daymoney-month-head">' + da + '</span><br/><span class="daymoney-month-body">￥' + money + '</span>';
-                    }
-                    if(!mjj&&data[i]==iCurDays){
-                        m++;
-                        mjj=true;
                     }
                 }
             }
