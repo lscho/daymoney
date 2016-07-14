@@ -103,7 +103,7 @@
                     aTd[i].className = '';
                 }
             }
-            //获取日期
+        //获取日期
         var getMonthDays = function(y, m) {
             if (m < 0) {
                 m = 11;
@@ -116,6 +116,16 @@
             } else {
                 return aMonthDays[m];
             }
+        }
+        //解构价格
+        var getDate=function(daydatas){
+            var day,money,data=[];
+                for (var j = 0; j < daydatas.length; j++) {
+                    day = daydatas[j].day.split("|")[0];
+                    money = daydatas[j].day.split("|")[1];
+                    data[day]=money;
+                }
+            return data;
         }
         var iWeek = new Date(iYear, iMonth, 1).getDay(); //获得本月第一天是星期几
         var iCurDays = getMonthDays(iYear, iMonth); //获得本月天数
@@ -155,6 +165,10 @@
             d_list.push(i);
             data.push(i);
         }
+        //价格数据
+        if(daydatas){
+            var priceList=getDate(daydatas);
+        }
         for (var i = 0; i < data.length; i++) {
             var this_y = y_list[i];
             var this_m = (m_list[i] > 9) ? m_list[i] : '0' + m_list[i];
@@ -170,24 +184,16 @@
             }
             aTd[i].innerHTML = data[i];
             aTd[i].index = i;
-            if (daydatas) {
-                for (var j = 0; j < daydatas.length; j++) {
-                    oneday = daydatas[j].day.split("|")[0];
-                    money = daydatas[j].day.split("|")[1];
-                    ye = oneday.split("-")[0];
-                    mo = oneday.split("-")[1];
-                    da = oneday.split("-")[2];
-                    if (mo.split('')[0] == 0) {
-                        mo = mo.split('')[1];
-                    }
-                    if (da.split('')[0] == 0) {
-                        var da = da.split('')[1];
-                    }
-                    if (y == ye && m == mo && data[i] == da) {
-                        aTd[i].setAttribute('data-money', money);
-                        aTd[i].innerHTML = '<span class="am-daymoney-month-head">' + da + '</span><br/><span class="daymoney-month-body">￥' + money + '</span>';
-                    }
-                }
+            if (priceList) {
+                var tdday=aTd[i].getAttribute('data-date');
+                var da = tdday.split("-")[2];      //日期
+                if (da.split('')[0] == 0) {
+                    da = da.split('')[1];
+                } 
+                if(priceList[tdday]){
+                    aTd[i].setAttribute('data-money', priceList[tdday]);
+                    aTd[i].innerHTML = '<span class="am-daymoney-month-head">' + da + '</span><br/><span class="daymoney-month-body">￥' + priceList[tdday] + '</span>';                    
+                }               
             }
         }
     }
