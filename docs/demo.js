@@ -14,8 +14,7 @@ $(function() {
         },
         'click': function(obj) { 		//点击日期触发
             var html = obj.data('date') + "的价格是:" + obj.data('money');
-            $('#alert').html(html);
-            $('#my-alert').modal('toggle');
+            alert(html);
         }
     }).init();
     //使用daymoney对象方法
@@ -27,8 +26,7 @@ $(function() {
     });
     $("#set").click(function(){
     	daymoney.setmoney('2016-04-21',125,function(data){
-            $('#alert').html('已将'+data.day+'价格设置为'+data.money);
-            $('#my-alert').modal('toggle');   		
+            alert('已将'+data.day+'价格设置为'+data.money);	
     	});
     });
 });
