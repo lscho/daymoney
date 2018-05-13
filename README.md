@@ -6,7 +6,7 @@
 
 ### 默认方式
 
-[demo](http://lscho.github.io/am-daymoney/docs/demo.html)
+[demo](http://lscho.github.io/daymoney/docs/demo.html)
 
 ```javascript
             var daydata = '[{"day":"2016-04-10|228"},{"day":"2016-04-11|228"},{"day":"2016-04-12|228"},{"day":"2016-04-13|228"},{"day":"2016-04-14|258"},{"day":"2016-04-15|228"},{"day":"2016-04-16|228"},{"day":"2016-04-17|308"},{"day":"2016-04-19|228"},{"day":"2016-04-20|228"},{"day":"2016-04-22|228"},{"day":"2016-04-23|228"},{"day":"2016-04-24|228"},{"day":"2016-04-25|228"},{"day":"2016-04-26|228"},{"day":"2016-04-27|228"},{"day":"2016-04-28|558"},{"day":"2016-04-29|228"},{"day":"2016-04-30|228"},{"day":"2016-04-31|228"}]';
@@ -33,7 +33,7 @@
 
 ### 输入框模式
 
-[demo](http://lscho.github.io/am-daymoney/docs/demo1.html)
+[demo](http://lscho.github.io/daymoney/docs/demo1.html)
 
 ```javascript
             $('input').click(function(){
